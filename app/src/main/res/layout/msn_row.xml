@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="6dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/elayouti"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/elayoutg"
+            android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="45dp"
+            android:visibility="gone"
+            android:id="@+id/ePerfil"
+            android:layout_marginRight="5dp"
+            android:src="#F2F2F2"
+            android:layout_height="45dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/elayout"
+            android:background="@drawable/shape_imessage">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                app:cardCornerRadius="12dp"
+                android:id="@+id/idcard"
+                android:visibility="gone"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/tranparente"
+                android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                android:layout_margin="3dp"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:layout_width="?actionBarSize"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/ic_gallery"
+                    android:layout_gravity="center"
+                    android:id="@+id/sewrf"
+                    android:layout_height="?actionBarSize"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:id="@+id/imgchat"
+                android:layout_height="match_parent"/>
+
+            </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="9dp"
+                    android:visibility="gone"
+                    android:layout_marginBottom="-12dp"
+                    android:alpha="0.7"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/tempto"
+                    android:textColor="@color/branco"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:visibility="gone"
+                    android:minWidth="150dp"
+                    android:gravity="left"
+                    android:id="@+id/setmsn"
+                    android:alpha="0.8"
+                    android:autoLink="web"
+                    android:textColorLink="@color/branco"
+                    android:layout_gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_below="@+id/tempto"
+                    android:text="Oi como você está hoje?"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+            <com.bkaiquesilva.nnzi.Playaudio.VoicePlayerView
+                android:id="@+id/voicePlayerView"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                app:enableVisualizer="true"
+                app:playPauseBackgroundColor="@color/colorAccent"
+                app:playPauseCornerRadius="100"
+                app:playProgressbarColor="@color/branco"
+                app:progressTimeColor="@color/branco"
+                app:seekBarProgressColor="#000"
+                app:seekBarThumbColor="@color/branco"
+                app:showTiming="true"
+                app:viewBackground="@color/tranparente"
+                app:viewCornerRadius="10"
+                app:visualizationNotPlayedColor="@color/branco"
+                app:visualizationPlayedColor="@color/branco" />
+
+        </RelativeLayout>
+        </LinearLayout>
+
+        </RelativeLayout>
+
+</RelativeLayout>

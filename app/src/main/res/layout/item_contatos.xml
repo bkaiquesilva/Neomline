@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:id="@+id/reeeeee"
+    android:paddingBottom="3dp"
+    android:paddingTop="3dp"
+    android:paddingRight="6dp"
+    android:paddingLeft="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:paddingRight="6dp"
+        android:paddingLeft="6dp">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_card_profile"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:outlineAmbientShadowColor="#BEBABA"
+        android:outlineSpotShadowColor="#BEBABA" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fake_iv_card_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:outlineAmbientShadowColor="#BEBABA"
+                android:outlineSpotShadowColor="#BEBABA"
+                android:src="@color/grey_10" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/nova_mensagem"
+                android:layout_width="14dp"
+                android:visibility="gone"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_height="14dp"
+                android:outlineAmbientShadowColor="#BEBABA"
+                android:outlineSpotShadowColor="#BEBABA"
+                android:src="#43C648" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center|left"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text=" "
+            android:textSize="11sp"
+            android:id="@+id/user_name"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="14sp"
+            android:text=" "
+            android:textAllCaps="true"
+            android:id="@+id/status"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="25dp"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/us_image"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@color/grey_20"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Cancel"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:id="@+id/cancee"
+        android:gravity="right"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Confirmar"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/confiee"
+        android:gravity="right"
+        android:layout_height="wrap_content"/>
+
+
+    <com.eyalbira.loadingdots.LoadingDots
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:id="@+id/looiee"
+        android:layout_marginBottom="5dp"
+        app:LoadingDots_dots_color="@color/baree" />
+
+
+</LinearLayout>

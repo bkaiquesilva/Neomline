@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Bloqueio">
+
+    <com.hanks.passcodeview.PasscodeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/senha_view"
+        android:background="@color/colorPrimary"
+        app:firstInputTip="Digite a senha numérica"
+        app:correctInputTip="A senha está correta"
+        app:wrongInputTip="A senha está incorreta"
+        app:correctStateColor="@color/verdyy"
+        app:wrongStateColor="@color/vermel"
+        app:numberTextColor="@color/greyy"/>
+
+</RelativeLayout>

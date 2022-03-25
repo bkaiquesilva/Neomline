@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Pendentesss">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/louji"
+        android:background="@color/colorPrimary"
+        android:layout_height="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ghlk"
+        android:background="@drawable/shape_imeage"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:onClick="ovook"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:tint="@color/colorBlack"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_dele_s"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:id="@+id/pd_nomase"
+            android:text="Jonas (pendente)"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="?android:actionBarSize"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="3dp"
+            android:visibility="invisible"
+            android:clickable="false"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_dele_s"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ghlk"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_pd"
+            android:layout_width="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="?actionBarSize"
+            android:src="@color/colorPrimary"
+            android:layout_height="70dp"/>
+
+        <TextView
+            android:id="@+id/nv_soli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_pd"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="Jonas enviou um \n novo pedido"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="?actionBarSize"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/nv_negar"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:text="NEGAR"
+        android:background="@drawable/butc"
+        android:backgroundTint="@color/colorPrimary"
+        android:padding="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nv_aceitar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="ACEITO"
+        android:background="@drawable/butc"
+        android:backgroundTint="@color/colorPrimary"
+        android:padding="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+</LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

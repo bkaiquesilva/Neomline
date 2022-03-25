@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:id="@+id/bybby_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ChatActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/dbbg1"
+        android:background="@color/colorPrimary"
+        android:layout_height="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ghlk"
+        android:background="@drawable/shape_imeage"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:onClick="ovook"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:tint="@color/colorBlack"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_dele_s"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:id="@+id/nomase"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="?android:actionBarSize"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="3dp"
+            android:visibility="invisible"
+            android:clickable="false"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_dele_s"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ghlk"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/msn_row"
+            android:layout_above="@id/looeee"
+            android:layout_marginTop="2dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:padding="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:id="@+id/progress"
+            android:layout_above="@+id/sendContainer">
+
+            <ProgressBar
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="150dp"
+                android:id="@+id/dddddf"
+                android:indeterminate="true"
+                android:indeterminateOnly="true"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_below="@+id/dddddf"
+                android:gravity="left"
+                android:layout_marginTop="-5dp"
+                android:text="Processando....."
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <com.eyalbira.loadingdots.LoadingDots
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/looeee"
+            android:visibility="gone"
+            android:layout_above="@id/sendContainer"
+            android:layout_marginRight="21dp"
+            android:paddingTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentRight="true"
+            app:LoadingDots_dots_color="@color/colorBlack" />
+
+
+        <LinearLayout
+            android:id="@+id/sendContainer"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/message_item_border"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <ImageView
+                    android:id="@+id/audy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:layout_marginRight="4dp"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/ic_keyboard_voice_24dp" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBg" />
+
+                <EditText
+                android:id="@+id/new_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="left"
+                android:inputType="textNoSuggestions|textMultiLine"
+                android:imeOptions="actionSend"
+                android:privateImeOptions="nm"
+                android:layout_marginRight="5dp"
+                android:hint="Nova mensagem..."
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/new_message_fk"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:inputType="text"
+                    android:imeOptions="actionSend"
+                    android:layout_marginRight="5dp"
+                    android:hint="Gravando....."
+                    android:paddingTop="11dp"
+                    android:paddingBottom="11dp"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="53dp"
+                        android:layout_height="53dp"
+                        android:id="@+id/code_i"
+                        android:outlineAmbientShadowColor="#BEBABA"
+                        android:outlineSpotShadowColor="#BEBABA"
+                        android:src="@color/colorPrimary" />
+
+                    <ImageView
+                        android:id="@+id/sendy"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:padding="4dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_round_mic_24"
+                        android:tint="@color/colorWhite" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

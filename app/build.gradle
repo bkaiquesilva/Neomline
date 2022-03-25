@@ -1,0 +1,81 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.bkaiquesilva.nnzi"
+        minSdkVersion 23
+        targetSdkVersion 31
+        versionCode 45
+        versionName "1.45.8"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    android {
+        lintOptions {
+            checkReleaseBuilds false
+            abortOnError false
+        }
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.google.firebase:firebase-core:19.0.1'
+    implementation 'com.firebaseui:firebase-ui-database:0.4.0'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.3.0'
+    implementation 'com.google.firebase:firebase-database:20.0.1'
+    implementation 'com.google.firebase:firebase-storage:20.0.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:customtabs:28.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+
+    implementation 'com.eyalbira.loadingdots:loading-dots:1.0.2'
+    implementation 'com.hanks:passcodeview:0.1.2'
+    implementation 'com.github.rtoshiro.mflibrary:mflibrary:1.0.0'
+
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'com.mcxiaoke.volley:library:1.0.0'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+}

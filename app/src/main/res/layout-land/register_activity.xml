@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".RegisterActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:padding="20dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="REGISTRO"
+                android:gravity="left"
+                android:textAllCaps="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:id="@+id/abb3"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/grey_10"
+                    android:background="@drawable/quee"
+                    android:hint="Por favor, verifique sua caixa de entrada, acabamos de lhe enviar uma mensagem pelo e-mail para confirmar o cadastro."
+                    android:focusable="false"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:id="@+id/logine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/grey_20"
+                    android:background="@drawable/quee"
+                    android:gravity="center"
+                    android:layout_gravity="right"
+                    android:hint="OK, ENTENDI"
+                    android:textAllCaps="true"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:id="@+id/abb2"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/grey_10"
+                    android:background="@drawable/quee"
+                    android:hint="Sua conta foi criada com sucesso, agora precisamos enviar um link de confirmação para o e-mail cadastrado."
+                    android:focusable="false"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:onClick="confirmar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/grey_20"
+                    android:background="@drawable/quee"
+                    android:gravity="center"
+                    android:layout_gravity="right"
+                    android:hint="CONTINUAR"
+                    android:textAllCaps="true"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:id="@+id/abb"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextRegisterName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/grey_20"
+                    android:background="@drawable/quee"
+                    android:hint="Nome ou apelido"
+                    android:inputType="textCapWords|textNoSuggestions"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack" />
+
+
+                <EditText
+                    android:id="@+id/editTextRegisterEmail1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/grey_20"
+                    android:background="@drawable/quee"
+                    android:hint="@string/email"
+                    android:textStyle="bold"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/editTextRegisterPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/grey_20"
+                        android:background="@drawable/quee"
+                        android:hint="@string/password"
+                        android:textStyle="bold"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textColor="@color/colorBlack" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <EditText
+                    android:id="@+id/btnRegisterPageRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/grey_20"
+                    android:background="@drawable/quee"
+                    android:gravity="center"
+                    android:layout_gravity="right"
+                    android:hint="CRIAR CONTA"
+                    android:textAllCaps="true"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

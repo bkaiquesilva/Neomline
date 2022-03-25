@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="custom_tab_layout_height">56dp</dimen>
+    <dimen name="media_summary_strip">78dp</dimen>
+    <dimen name="media_summary_grid">96dp</dimen>
+    <dimen name="tab_indicator_height">5dp</dimen>
+    <dimen name="emoji_icon_size">28sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="default_margin">20dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dimen_post">200dp</dimen>
+</resources>

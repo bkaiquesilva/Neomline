@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Neomline</string>
+
+    <string name="email">E-mail</string>
+    <string name="password">Senha</string>
+    <string name="login">Login</string>
+    <string name="hello">Hello!</string>
+    <string name="male">Homem</string>
+    <string name="female">Mulher</string>
+    <string name="birthday">Nascimento</string>
+    <string name="conta" tools:ignore="TypographyDashes">....</string>
+
+    <string name="MainFolderName">NNZi</string>
+    <string name="VideoToGIF">_TEMP</string>
+    <string name="VideoToImage">VideoToImage</string>
+    <string name="shipped_ffmpeg_version">n2.4.2</string>
+    <string name="white">TEMA PADRÃO</string>
+
+</resources>

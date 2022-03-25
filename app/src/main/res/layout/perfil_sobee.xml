@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PerfilSobee">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dth_perfil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="#fff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/dth_perfil"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:text="..."
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            style="@style/Widget.Design.TextInputLayout"
+            android:background="#fff"
+            android:cursorVisible="false"
+            android:gravity="bottom"
+            android:layout_marginRight="15dp"
+            android:drawableLeft="@drawable/identity_24"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/colorPrimary"
+            android:id="@+id/dth_nome"
+            android:textStyle="bold"
+            android:inputType="textNoSuggestions"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:paddingRight="2dp"
+            android:background="#fff"
+            android:paddingLeft="2dp"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/save_24"
+                android:clickable="true"
+                android:id="@+id/sv_nome"
+                android:tint="@color/colorPrimary"
+                android:layout_height="match_parent"/>
+
+            <ProgressBar
+                android:layout_width="20dp"
+                android:id="@+id/progres_1"
+                android:visibility="gone"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/dth_aniversario"
+            style="@style/Widget.Design.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:cursorVisible="false"
+            android:background="#fff"
+            android:drawableLeft="@drawable/contactge_24"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/colorPrimary"
+            android:focusable="false"
+            android:gravity="bottom"
+            android:inputType="none|textNoSuggestions"
+            android:padding="5dp"
+            android:text="..."
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                style="@style/Widget.Design.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:background="#fff"
+                android:onClick="novoCOnter"
+                android:drawableLeft="@drawable/ic_bafg_24ii"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/colorPrimary"
+                android:focusable="false"
+                android:gravity="bottom"
+                android:inputType="none|textNoSuggestions"
+                android:padding="5dp"
+                android:text="Novo contato"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:text="Encerrar a conta"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"
+                style="@style/Widget.Design.TextInputLayout"
+                android:background="#fff"
+                android:focusable="false"
+                android:cursorVisible="false"
+                android:gravity="bottom"
+                android:layout_marginRight="15dp"
+                android:drawableLeft="@drawable/ic_dedfeep"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/colorPrimary"
+                android:id="@+id/encerrade"
+                android:textStyle="bold"
+                android:inputType="textNoSuggestions"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:paddingRight="2dp"
+                android:background="#fff"
+                android:paddingLeft="2dp"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_rd_pgfhjew_24"
+                    android:onClick="loggoutt"
+                    android:tint="@color/colorPrimary"
+                    android:layout_height="match_parent"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/novo_cctat"
+                style="@style/Widget.Design.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="privacyyyy"
+                android:cursorVisible="false"
+                android:background="#fff"
+                android:drawableLeft="@drawable/ic_oghacygbhj_24"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/colorPrimary"
+                android:focusable="false"
+                android:gravity="bottom"
+                android:inputType="none|textNoSuggestions"
+                android:padding="5dp"
+                android:text="Termos e Política"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/bloqueadooo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DESBLOQUEAR"
+            android:padding="7dp"
+            android:gravity="center"
+            android:enabled="false"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:drawableTint="@color/colorPrimary"
+            android:drawableRight="@drawable/ic_baseline_rightt_24"
+            android:background="@drawable/butc"
+            android:layout_marginRight="2dp" />
+
+        <TextView
+            android:id="@+id/senia"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="----"
+            android:textStyle="bold"
+            android:padding="7dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/butc"
+            android:layout_marginLeft="2dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
